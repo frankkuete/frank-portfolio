@@ -24,6 +24,7 @@
     font-family: 'Ubuntu' , sans-serif;
     padding: 20px 0;
     transition: all 0.3s ease; 
+    z-index: 999;
 }
 .navbar.sticky{
     background: crimson;
@@ -66,10 +67,18 @@
     cursor:pointer;
 }
 
+
+
+
+
+
+
+
+
 /*Styling the Home section (Hero banner)*/
 
 .home{
-    background: url("images/bg2.jpg") no-repeat ;
+    background: url("images/bg.jpg") no-repeat ;
     display:flex;
     background-size: cover ;
     color: #fff;
@@ -106,15 +115,111 @@
 .home .home-content a:hover{
     background: none;
 }
+
+
+
+
+
+
+/* about section style */
+
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Ubuntu' , sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom:20px;
+}
+
+.about .title::before{
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 3px;
+    background:#111;
+    left:50%;
+    bottom:0px;
+    transform: translateX(-50%);
+}
+
+.about .title::after{
+    content: "Who I am ";
+    position: absolute;
+    bottom:-7px;
+    left:50%;
+    font-size: 20px;
+    color:crimson;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.about .about-content .left img {
+    height: 400px ;
+    width: 400px ;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.about-content{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size:25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p {
+    text-align: justify;
+}
+.about .about-content .right a{
+    border: 2px solid crimson;
+    color: #fff;
+    border-radius: 6px;
+    display: inline-block ;
+    padding: 10px 30px; 
+    margin-top: 25px;
+    font-size: 20px;
+    background:crimson;
+    transition: all 0.5s ease;
+}
+.about .about-content .right a:hover{
+    background: none;
+    color:crimson;
+}
+
+
+
+
+
+
+
 /* responsive media queries */
 
+ /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
     .maxwidth{
         margin-left: 0;
     }
-} /* Extra large devices (large laptops and desktops, 1200px and up) */
+}
 
 
+/* tablets from 0 to 992px width */
 @media only screen and (max-width: 992px) {
     .maxwidth{
         padding: 0 50px;
@@ -177,10 +282,29 @@
         font-size: 20px;
     }
 
+    .about .about-content .left img {
+        height: 350px ;
+        width: 350px ;
+        object-fit: cover;
+        border-radius: 5px;
+    }
 
-} /* Small devices from 0 to 992px width */
+    .about .about-content .left{
+        display:flex;
+        justify-content:center;
+        margin: 0 auto 60px;
+    }
+
+    .about .about-content .right{
+        flex:100%;
+    }
+
+    .about .about-content .column{
+        width: 100%;
+    }
 
 
+} 
 
 
 @media only screen and (max-width: 600px) {
@@ -197,8 +321,13 @@
         padding: 10px 27px;
         font-size: 18px;
     }
+    .about .about-content .left img{
+        height: 300px ;
+        width: 300px ;
+    }
+} 
 
-} /* Extra small devices (phones, 600px and down) */
+/* small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 500px) {
     .home .maxwidth .home-content .text-2{
@@ -212,7 +341,9 @@
         font-size: 15px;
     }
 
-} /* Extra small devices (phones, 600px and down) */
+} 
+
+/* Extra small devices (phones, 600px and down) */
 
 @media only screen and (max-width: 400px) {
     .home .maxwidth .home-content .text-2{
