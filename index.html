@@ -1,96 +1,192 @@
 <html>
-    <head>
-        <title>My Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="images/logo.jpg">
-        <!--<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">--> 
-        <script src="https://kit.fontawesome.com/5e97fc59e4.js" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="maxwidth">
-                <div class="logo">
-                    <a href="#" class="" id="">Port<span>folio</span> </a>
-                </div>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">My Skills</a></li>
-                    <li> <a href="#">My Background</a> </li>
-                    <li><a href="#">My Projects</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>  
-        </nav>
 
-        <section class="home" id="home">
-            <div class="maxwidth">
-                <div class="home-content">
-                    <div class="text-1">Hi , I am </div>
-                    <div class="text-2">Frank Kuete</div>
-                    <div class="text-3">And I'm a <span>Software Developer</span></div>
-                    <a href="#">Hire me Here </a>
+<head>
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.jpg">
+    <!--<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">-->
+    <script src="https://kit.fontawesome.com/5e97fc59e4.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div class="scroll-up-btn ">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
+    <nav class="navbar">
+        <div class="maxwidth">
+            <div class="logo">
+                <a href="#" class="" id="">Port<span>folio</span> </a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">My Skills</a></li>
+                <li> <a href="#">My Background</a> </li>
+                <li><a href="#">My Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="maxwidth">
+            <div class="home-content">
+                <div class="text-1">Hi , I am </div>
+                <div class="text-2">Frank Kuete</div>
+                <div class="text-3">And I'm a <span>Software Developer</span></div>
+                <a href="#">Hire me Here </a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="maxwidth">
+            <h2 class="title">About Me</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="images/about.png" alt="">
+                </div>
+                <div class="column right">
+                    <div class="text">Hello , I am Frank Kuete / <span>Software Developer</span> </div>
+                    <p>I am a great fan of the IT world, rigor and methodical work are my two great qualities.
+                        Curious,motivated and self-taught, I am technically comfortable in full-stack web
+                        and mobile projects and I also have team spirit and always quick to cooperate . </p>
+                    <a href="">Download CV</a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
+    <section class="services" id="services">
+        <div class="maxwidth">
+            <h2 class="title"> My services </h2>
+            <div class="serv-content">
 
-        <section class="about" id="about">
-            <div class="maxwidth">
-                <h2 class="title">About Me  </h2>
-                <div class="about-content">
-                    <div class="column left">
-                        <img src="images/about.png" alt="">
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <div class="text">Back-end Web developement</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste nemo assumenda quaerat
+                            beatae ut.</p>
                     </div>
-                    <div class="column right">
-                        <div class="text">Hello , I am Frank Kuete / <span>Software Developer</span> </div>
-                        <p>I am a great fan of the IT world, rigor and methodical work are my two great qualities.
-                            Curious,motivated and self-taught, I am technically comfortable in full-stack web 
-                            and mobile projects and I also have team spirit and always quick to cooperate . </p>
-                        <a href="">Download CV</a>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fa-solid fa-desktop"></i>
+                        <div class="text">Front-end Web development</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste nemo assumenda quaerat
+                            beatae ut.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-mobile-alt"></i>
+                        <div class="text">Mobile development Enthusiastic</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste nemo assumenda quaerat
+                            beatae ut.</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="services" id="services">
-            <div class="maxwidth">
-                <h2 class="title"> My skills </h2>
-                <div class="serv-content">
 
-                    <div class="card">
-                        <div class="box">
-                            <i class="fa-solid fa-user-gear"></i>
-                            <div class="text">Back-end Web developement</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste nemo assumenda quaerat beatae ut.</p>
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact me</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Get in Touch</div>
+                    <p>Feel Free to Contact Me at my following social medias for any questions , suggestions and
+                        possible interviews for a possible CDI, CDD or internship </p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Frank Kuete</div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <i class="fa-solid fa-desktop"></i>
-                            <div class="text">Front-end Web development</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste nemo assumenda quaerat beatae ut.</p>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Woluwe-Saint-Lambert, Bruxelles-Belgique </div>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box">
-                            <i class="fas fa-mobile-alt"></i>
-                            <div class="text">Mobile development Enthusiastic</div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, iste nemo assumenda quaerat beatae ut.</p>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">kuete.frank1@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-github"></i>
+                            <div class="info">
+                                <div class="head">Github</div>
+                                <div class="sub-title"><a href="https://github.com/frankkuete">github.com/frankkuete</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fab fa-linkedin"></i>
+                            <div class="info">
+                                <div class="head">LinkedIn</div>
+                                <div class="sub-title"> <a
+                                        href="https://www.linkedin.com/in/frank-kuete-9b5023149/">LinkedIn.com/frankKuete</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="column right">
+                    <div class="text">Message me Here </div>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required="" spellcheck="false"
+                                    data-ms-editor="true">
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required="" spellcheck="false"
+                                data-ms-editor="true">
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message.." required="" spellcheck="false"
+                                data-ms-editor="true"></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Send message</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </body>
+    <footer>
+        <span>Designed with &#129505 By <a href="https://github.com/frankkuete">Frank Kuete</a> | <span
+                class="far fa-copyright"></span>
+            2022 All rights reserved.</span>
+    </footer>
+</body>
+
 </html>
