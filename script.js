@@ -22,4 +22,14 @@ $(document).ready(function () {
         $('.navbar .menu').toggleClass('active')
         $('.navbar .menu-btn i').toggleClass('active')
     })
+
+
+    // animation the hero banner text 
+    var typed = new Typed("#typed", {
+        strings: [" Back-end Web developer ", "Front-End web developer", "Software Developer", "Mobile | Data enthusiastic"],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true
+    })
 })
+
