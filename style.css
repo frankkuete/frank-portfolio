@@ -110,6 +110,7 @@
     background-color: crimson;
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease ;
+
 }
 
 
@@ -284,16 +285,17 @@ section .title::after{
     align-items: center;
     justify-content:space-between;
     flex-wrap: wrap;
+    align-content: space-between;
 }
 
 .services .serv-content .card{
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
     background: #222;
     text-align: center;
     border-radius: 6px;
     cursor: pointer;
     padding : 20px 25px;
-
+    margin-top:30px;
 }
 
 .services .serv-content .card i{
@@ -303,9 +305,15 @@ section .title::after{
 }
 
 .services .serv-content .card .text{
-    font-size: 25px;
-    font-weight:500;
+    font-size: 30px;
+    font-weight:700;
     margin: 10px 0 7px 0;
+}
+.services .serv-content .card p{
+    text-align: left;
+}
+.services .serv-content .card h4{
+    background:  crimson;
 }
 
 .services .serv-content .card:hover .box{
@@ -313,6 +321,9 @@ section .title::after{
 }
 .services .serv-content .card:hover {
     background:  crimson;
+}
+.services .serv-content .card:hover h4{
+    background:  #111;
 }
 
 .services .serv-content .card:hover i{
