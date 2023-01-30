@@ -36,10 +36,10 @@
   function email_form_submit(thisForm, email , subject , name , message){
     Email.send({
     SecureToken : "827c4cd3-0ea5-4faa-8513-03c2c0ed6c16",
-    To : email,
+    To : "kuete.frank1@gmail.com",
     From : "kuete.frank1@gmail.com",
     Subject :subject,
-    Body : 'Name of the sender  : ' + name +'<br/> Messsage content : ' + message 
+    Body :'<br/> Messsage from : ' + email + ' <br/> Name of the sender : ' + name +'<br/> Messsage content : ' + message 
     })
     .then(message =>{
         thisForm.querySelector('.loading').classList.remove('d-block');
@@ -47,7 +47,7 @@
         throw new Error('Form submission failed and no error message returned from' ); 
         }
         else{
-          alert('Message have been Sent' + message);
+          alert('Your Message have been Sent ;   Message status : ' + message);
         }
       }
     )
